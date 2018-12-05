@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpFundamentalsAssignment", "CsharpFundamentalsAssignment\CsharpFundamentalsAssignment.csproj", "{F6B34E8F-BAC4-47B3-B035-5A4962E44670}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpFundamentalsAssignmentTests", "CsharpFundamentalsAssignmentTests\CsharpFundamentalsAssignmentTests.csproj", "{10C0F034-30F4-4AE3-B0C9-06791AEBF5D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6B34E8F-BAC4-47B3-B035-5A4962E44670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6B34E8F-BAC4-47B3-B035-5A4962E44670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6B34E8F-BAC4-47B3-B035-5A4962E44670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6B34E8F-BAC4-47B3-B035-5A4962E44670}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C0F034-30F4-4AE3-B0C9-06791AEBF5D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C0F034-30F4-4AE3-B0C9-06791AEBF5D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C0F034-30F4-4AE3-B0C9-06791AEBF5D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C0F034-30F4-4AE3-B0C9-06791AEBF5D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
