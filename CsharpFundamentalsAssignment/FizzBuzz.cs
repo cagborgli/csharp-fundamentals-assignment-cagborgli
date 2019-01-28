@@ -18,7 +18,7 @@ namespace CsharpFundamentalsAssignment
     {
         /**
          * Checks whether a given int `a` is evenly divisible by a given int `b` or not.
-         * For example, `divides(4, 2)` returns `true` and `divides(4, 3)` returns `false`.
+         * For example, `Divides(4, 2)` returns `true` and `Divides(4, 3)` returns `false`.
          *
          * @param a the number to be divided
          * @param b the number to divide by
@@ -48,7 +48,7 @@ namespace CsharpFundamentalsAssignment
 
         /**
          * Generates an array of messages to print for a given range of numbers.
-         * If there is no message for an individual number (i.e., `message(n)` returns null),
+         * If there is no message for an individual number (i.e., `Message(n)` returns null),
          * it should be excluded from the resulting array.
          *
          * @param start the number to start with (inclusive)
@@ -63,7 +63,7 @@ namespace CsharpFundamentalsAssignment
 
         /**
          * For this main method, iterate over the numbers 1 through 115 and print
-         * the relevant messages to sysout
+         * the relevant messages to the console
          */
         public static void Main(String[] args)
         {

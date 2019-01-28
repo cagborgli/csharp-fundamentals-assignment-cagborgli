@@ -16,7 +16,7 @@ namespace CsharpFundamentalsAssignment
     {
         /**
          * Calculates the value in the Fibonacci sequence at a given index. For example,
-         * `atIndex(0)` and `atIndex(1)` should return `1`, because the first two elements of the
+         * `AtIndex(0)` and `AtIndex(1)` should return `1`, because the first two elements of the
          * sequence are both `1`.
          *
          * @param i the index of the element to calculate
