@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+
 
 namespace CsharpFundamentalsAssignment
 {
@@ -27,7 +29,12 @@ namespace CsharpFundamentalsAssignment
          */
         public static bool Divides(int a, int b)
         {
-            throw new NotImplementedException();
+            if (b == 0)
+                throw new ArgumentException();
+            else if (a % b == 0)
+                return true;
+            else
+                return false;
         }
 
         /**
@@ -43,7 +50,15 @@ namespace CsharpFundamentalsAssignment
          */
         public static String Message(int n)
         {
-            throw new NotImplementedException();
+
+            if (n % 3 == 0 && n % 5 == 0)
+                return string.Format("{0}: FizzBuzz",n);
+            else if (n % 3 == 0)
+                return string.Format("{0}: Fizz",n);
+            else if (n % 5 == 0)
+                return string.Format("{0}: Buzz",n);
+            else
+                return null;
         }
 
         /**
@@ -58,7 +73,20 @@ namespace CsharpFundamentalsAssignment
          */
         public static String[] Messages(int start, int end)
         {
-            throw new NotImplementedException();
+           if(end < start)
+                throw new ArgumentException();
+            var s = "";
+        
+            List<string> arr = new List<string>();
+
+            for (int i = start; i < end; i++)
+            {
+                s = Message(i);
+                if(s != null)
+                    arr.Add(s);
+            }
+            string[] Arr = arr.ToArray();
+            return Arr;
         }
 
         /**
@@ -67,7 +95,8 @@ namespace CsharpFundamentalsAssignment
          */
         public static void Main(String[] args)
         {
-            throw new NotImplementedException();
+            for (int i = 1; i <115; i++)
+                Console.Write(Message(i));
         }
     }
 }

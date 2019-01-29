@@ -25,7 +25,19 @@ namespace CsharpFundamentalsAssignment
          */
         public static int AtIndex(int i)
         {
-            throw new NotImplementedException();
+            if (i < 0)
+                throw new ArgumentException();
+            if (i++ <= 1)
+                return 1;
+            int[] n = new int[i];
+            int j = 2;
+            n[0] = 1; n[1] = 1;
+            while (j < i)
+            {
+                n[j] = n[j - 2] + n[j - 1];
+                j++;
+            }
+            return n[--j];
         }
 
         /**
@@ -40,7 +52,18 @@ namespace CsharpFundamentalsAssignment
          */
         public static int[] Slice(int start, int end)
         {
-            throw new NotImplementedException();
+            if (start < 0 || end <0|| end <start)
+                throw new ArgumentException();
+     
+            var range = end - start;
+            int[] arr= new int[range];
+            int w = 0;
+            for (var i = start; i < end; i++)
+            {
+                arr[w] = AtIndex(i);
+                w++;
+            }
+            return arr;
         }
 
         /**
@@ -52,7 +75,18 @@ namespace CsharpFundamentalsAssignment
          */
         public static int[] Sequence(int count)
         {
-            throw new NotImplementedException();
+            int[] arr = new int[count];
+            if (count < 0)
+                throw new ArgumentException();
+            else
+            {
+                
+                for (var i = 0; i < count; i++)
+                    arr[i] = AtIndex(i);
+                
+            }
+            return arr;
+
         }
     }
 }
